@@ -158,7 +158,6 @@ def delete_employee():
 def highest_salary():
     connection =get_connection()
     pen =connection.cursor()
-
     query ="""
     SELECT  max(salary) FROM employee
     """
